@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/Assets/Scripts/LoaderView.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/Assets/Scripts/LoaderView.cs" />
+              <option name="originalContent" value="using System.Collections;&#10;// using DG.Tweening;&#10;using UnityEngine;&#10;&#10;public class LoaderView : MonoBehaviour&#10;{&#10;    private Coroutine _loadingCoroutine;&#10;&#10;    private bool _canRotate;&#10;&#10;    private void OnEnable()&#10;    {&#10;        _loadingCoroutine = StartCoroutine(DelayLoading());&#10;    }&#10;&#10;    private void OnDisable()&#10;    {&#10;        StopCoroutine(_loadingCoroutine);&#10;    }&#10;&#10;    private IEnumerator DelayLoading()&#10;    {&#10;        int sec = 20;&#10;&#10;        while (sec-- &gt; 0)&#10;        {&#10;            Vector3 targetLoadingRotation = new Vector3(0, 0, gameObject.transform.localRotation.eulerAngles.z+350);&#10;            &#10;            &#10;            yield return new WaitForSeconds(1.1f);&#10;        }&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="using System.Collections;&#10;// using DG.Tweening;&#10;using UnityEngine;&#10;&#10;public class LoaderView : MonoBehaviour&#10;{&#10;    private Coroutine _loadingCoroutine;&#10;&#10;    private bool _canRotate;&#10;&#10;    private void OnEnable()&#10;    {&#10;        _loadingCoroutine = StartCoroutine(DelayLoading());&#10;    }&#10;&#10;    private void OnDisable()&#10;    {&#10;        StopCoroutine(_loadingCoroutine);&#10;    }&#10;&#10;    private IEnumerator DelayLoading()&#10;    {&#10;        int sec = 20;&#10;        _canRotate = true;&#10;        while (sec-- &gt; 0 &amp;&amp; _canRotate)&#10;        {&#10;            float elapsed = 0f;&#10;            float duration = 1.1f;&#10;            float startZ = gameObject.transform.localRotation.eulerAngles.z;&#10;            float endZ = startZ + 350f;&#10;            while (elapsed &lt; duration)&#10;            {&#10;                float z = Mathf.Lerp(startZ, endZ, elapsed / duration);&#10;                gameObject.transform.localRotation = Quaternion.Euler(0, 0, z);&#10;                elapsed += Time.deltaTime;&#10;                yield return null;&#10;            }&#10;            gameObject.transform.localRotation = Quaternion.Euler(0, 0, endZ);&#10;            yield return null;&#10;        }&#10;    }&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
