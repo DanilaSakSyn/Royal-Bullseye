@@ -354,6 +354,10 @@ PrefabInstance:
       propertyPath: appsflyerDevID
       value: gSyFhVabYYQMncVWTvxVUP
       objectReference: {fileID: 0}
+    - target: {fileID: 7585373355302651059, guid: 3376294fb51ed4820a844266f8aef425, type: 3}
+      propertyPath: forcedScreenOrientation
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8007527105183578331, guid: 3376294fb51ed4820a844266f8aef425, type: 3}
       propertyPath: m_Name
       value: '[CanvasHolder]'
