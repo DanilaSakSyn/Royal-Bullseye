@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "345317855005",
+    "project_id": "royal-bullseye",
+    "storage_bucket": "royal-bullseye.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345317855005:ios:457cf2dcf41343caf79bf4",
+        "android_client_info": {
+          "package_name": "com.ywhezrwugjeh.oadyqsvwidw"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPAAwyoiV0eHHPUjyjjB1d7GgVh3Qmrpk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
